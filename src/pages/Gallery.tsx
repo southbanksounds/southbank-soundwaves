@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 import { useState } from "react";
 
 const Gallery = () => {
@@ -85,18 +86,19 @@ const Gallery = () => {
                 className="overflow-hidden bg-card border-border hover:shadow-glow transition-all duration-500 cursor-pointer group"
                 onClick={() => setSelectedImage(image.src)}
               >
-                <div className="relative">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-background/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <p className="text-foreground text-center px-4 font-medium">
-                      {image.caption}
-                    </p>
-                  </div>
-                </div>
+                 <div className="relative">
+                   <OptimizedImage
+                     src={image.src}
+                     alt={image.alt}
+                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                   />
+                   <div className="absolute inset-0 bg-background/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                     <p className="text-foreground text-center px-4 font-medium">
+                       {image.caption}
+                     </p>
+                   </div>
+                 </div>
               </Card>
             ))}
           </div>
@@ -139,10 +141,12 @@ const Gallery = () => {
           onClick={() => setSelectedImage(null)}
         >
           <div className="max-w-4xl max-h-[90vh] relative">
-            <img
+            <OptimizedImage
               src={selectedImage}
               alt="Gallery image"
               className="max-w-full max-h-full object-contain rounded-lg shadow-glow"
+              sizes="(max-width: 768px) 90vw, 80vw"
+              priority
             />
             <button
               onClick={() => setSelectedImage(null)}

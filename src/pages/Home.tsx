@@ -14,6 +14,8 @@ const Home = () => {
           style={{
             backgroundImage: "url('/lovable-uploads/c4cc63c7-61fd-4f69-a554-387f92518985.png')"
           }}
+          role="img"
+          aria-label="Southbank band members sitting together on a teal couch in a cozy room with exposed brick walls"
         ></div>
         
         {/* Optional overlay for better text readability */}
