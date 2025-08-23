@@ -1,0 +1,152 @@
+import { Card } from "@/components/ui/card";
+import { useState } from "react";
+
+const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const images = [
+    {
+      src: "https://picsum.photos/800/600?random=10",
+      alt: "Southbank live performance at underground venue",
+      caption: "Underground venue session, 2024"
+    },
+    {
+      src: "https://picsum.photos/800/600?random=11", 
+      alt: "Band recording in studio with atmospheric lighting",
+      caption: "Studio sessions for 'City Echoes'"
+    },
+    {
+      src: "https://picsum.photos/800/600?random=12",
+      alt: "Southbank performing at outdoor festival",
+      caption: "Summer festival performance"
+    },
+    {
+      src: "https://picsum.photos/800/600?random=13",
+      alt: "Close-up of band instruments and equipment",
+      caption: "Behind the scenes setup"
+    },
+    {
+      src: "https://picsum.photos/800/600?random=14",
+      alt: "Band members in urban landscape setting",
+      caption: "Urban landscapes photo shoot"
+    },
+    {
+      src: "https://picsum.photos/800/600?random=15",
+      alt: "Concert crowd enjoying Southbank performance",
+      caption: "Connecting with our audience"
+    }
+  ];
+
+  const videos = [
+    {
+      src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      title: "Southbank - City Echoes (Official Music Video)",
+      description: "Our latest single featuring atmospheric visuals from the urban landscape."
+    },
+    {
+      src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      title: "Behind the Scenes: Recording 'Midnight Reflections'",
+      description: "Take a look at our creative process during the EP recording sessions."
+    }
+  ];
+
+  return (
+    <div className="min-h-screen py-20">
+      <div className="container mx-auto px-6">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
+            Gallery
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Visual moments from our journey - live performances, studio sessions, and behind-the-scenes glimpses.
+          </p>
+        </div>
+
+        {/* Photo Gallery */}
+        <section className="mb-20">
+          <h2 className="text-3xl font-bold mb-8 text-foreground text-center">
+            Photos
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {images.map((image, index) => (
+              <Card 
+                key={index} 
+                className="overflow-hidden bg-card border-border hover:shadow-glow transition-all duration-500 cursor-pointer group"
+                onClick={() => setSelectedImage(image.src)}
+              >
+                <div className="relative">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-background/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <p className="text-foreground text-center px-4 font-medium">
+                      {image.caption}
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        {/* Video Gallery */}
+        <section>
+          <h2 className="text-3xl font-bold mb-8 text-foreground text-center">
+            Videos
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {videos.map((video, index) => (
+              <Card key={index} className="p-6 bg-card border-border hover:shadow-glow transition-all duration-500">
+                <div className="aspect-video rounded-lg overflow-hidden mb-4">
+                  <iframe
+                    className="w-full h-full"
+                    src={video.src}
+                    title={video.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-foreground">
+                  {video.title}
+                </h3>
+                <p className="text-muted-foreground">
+                  {video.description}
+                </p>
+              </Card>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 bg-background/90 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="max-w-4xl max-h-[90vh] relative">
+            <img
+              src={selectedImage}
+              alt="Gallery image"
+              className="max-w-full max-h-full object-contain rounded-lg shadow-glow"
+            />
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 text-foreground bg-background/80 rounded-full p-2 hover:bg-background transition-colors"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Gallery;
