@@ -2,117 +2,117 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Southbank Band Website Design System - Americana Power Pop with retro 70s/80s vibes
+/* Southbank Band Website Design System - Authentic brand colors from actual visual identity
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    /* Americana Power Pop - Retro 70s/80s college rock aesthetic */
-    --background: 35 25% 96%;
-    --foreground: 25 30% 15%;
+    /* Southbank's Authentic Brand Colors */
+    --background: 180 25% 95%;           /* Light teal/aqua background */
+    --foreground: 25 30% 15%;            /* Deep brown text */
 
-    --card: 30 20% 92%;
+    --card: 180 20% 92%;                 /* Slightly darker teal for cards */
     --card-foreground: 25 30% 15%;
 
-    --popover: 35 25% 94%;
+    --popover: 180 25% 94%;
     --popover-foreground: 25 30% 15%;
 
-    /* Brand Colors - Warm burnt orange with retro accents */
-    --primary: 15 75% 55%;
-    --primary-foreground: 35 25% 96%;
+    /* Brand Colors - From actual Southbank visuals */
+    --primary: 15 60% 50%;               /* Rust/brown from logo */
+    --primary-foreground: 180 25% 95%;
 
-    --secondary: 35 15% 88%;
+    --secondary: 180 30% 85%;            /* Muted teal */
     --secondary-foreground: 25 30% 20%;
 
-    --muted: 30 12% 82%;
+    --muted: 180 15% 88%;                /* Very light teal */
     --muted-foreground: 25 20% 45%;
 
-    --accent: 45 85% 60%;
-    --accent-foreground: 25 30% 15%;
+    --accent: 8 70% 55%;                 /* Coral/red accent */
+    --accent-foreground: 180 25% 95%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 35 25% 96%;
+    --destructive-foreground: 180 25% 95%;
 
-    --border: 30 15% 85%;
-    --input: 35 20% 90%;
-    --ring: 15 75% 55%;
+    --border: 180 20% 85%;
+    --input: 180 25% 90%;
+    --ring: 15 60% 50%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Band-specific design tokens - Americana/Power Pop */
-    --band-primary: 15 75% 55%;        /* Burnt orange */
-    --band-secondary: 180 25% 65%;     /* Retro teal */
-    --band-accent: 45 85% 60%;         /* Golden yellow */
-    --band-warm: 35 25% 96%;           /* Warm cream */
-    --band-dark: 25 30% 15%;           /* Deep brown */
-    --band-rust: 8 65% 50%;            /* Classic rust red */
+    /* Southbank Brand Tokens - From actual imagery */
+    --southbank-teal: 180 45% 70%;       /* Signature teal from logo */
+    --southbank-rust: 15 60% 50%;        /* Weathered brown from text */
+    --southbank-coral: 8 70% 55%;        /* Red/coral from grunge design */
+    --southbank-cream: 45 40% 95%;       /* Warm off-white */
+    --southbank-dark: 25 30% 15%;        /* Deep brown */
+    --southbank-light-teal: 180 25% 95%; /* Background teal */
     
-    /* Gradients - Warm retro vibes */
-    --gradient-hero: linear-gradient(135deg, hsl(15 75% 55%), hsl(8 65% 50%));
-    --gradient-accent: linear-gradient(135deg, hsl(45 85% 60%), hsl(35 80% 65%));
-    --gradient-retro: linear-gradient(135deg, hsl(180 25% 65%), hsl(15 75% 55%));
-    --gradient-warm: linear-gradient(180deg, hsl(35 25% 96%), hsl(30 20% 92%));
+    /* Gradients - Based on actual brand colors */
+    --gradient-hero: linear-gradient(135deg, hsl(180 45% 70%), hsl(15 60% 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(8 70% 55%), hsl(15 60% 50%));
+    --gradient-teal: linear-gradient(135deg, hsl(180 45% 70%), hsl(180 25% 95%));
+    --gradient-warm: linear-gradient(180deg, hsl(45 40% 95%), hsl(180 25% 95%));
     
-    /* Shadows - Warm, vintage feel */
-    --shadow-glow: 0 0 40px hsl(15 75% 55% / 0.25);
-    --shadow-accent: 0 10px 30px hsl(45 85% 60% / 0.2);
-    --shadow-warm: 0 10px 25px hsl(25 30% 15% / 0.1);
-    --shadow-vintage: 0 8px 20px hsl(8 65% 50% / 0.15);
+    /* Shadows - Softer, more organic feel */
+    --shadow-glow: 0 0 30px hsl(180 45% 70% / 0.3);
+    --shadow-accent: 0 8px 25px hsl(8 70% 55% / 0.2);
+    --shadow-warm: 0 6px 20px hsl(25 30% 15% / 0.1);
+    --shadow-vintage: 0 4px 15px hsl(15 60% 50% / 0.15);
 
-    /* Animations - Bouncy, fun feel */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Animations - Friendly, approachable feel */
+    --transition-smooth: all 0.3s ease-out;
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    /* Sidebar - Updated for retro theme */
-    --sidebar-background: 35 15% 88%;
+    /* Sidebar - Updated with brand colors */
+    --sidebar-background: 180 20% 92%;
     --sidebar-foreground: 25 30% 15%;
-    --sidebar-primary: 15 75% 55%;
-    --sidebar-primary-foreground: 35 25% 96%;
-    --sidebar-accent: 30 12% 82%;
+    --sidebar-primary: 15 60% 50%;
+    --sidebar-primary-foreground: 180 25% 95%;
+    --sidebar-accent: 180 15% 88%;
     --sidebar-accent-foreground: 25 30% 15%;
-    --sidebar-border: 30 15% 85%;
-    --sidebar-ring: 15 75% 55%;
+    --sidebar-border: 180 20% 85%;
+    --sidebar-ring: 15 60% 50%;
   }
 
   .dark {
-    /* Dark mode with warm, retro feel instead of cold blues */
+    /* Dark mode with warm, community feel */
     --background: 25 30% 8%;
-    --foreground: 35 25% 96%;
+    --foreground: 180 25% 95%;
 
     --card: 25 25% 12%;
-    --card-foreground: 35 25% 96%;
+    --card-foreground: 180 25% 95%;
 
     --popover: 25 25% 10%;
-    --popover-foreground: 35 25% 96%;
+    --popover-foreground: 180 25% 95%;
 
-    --primary: 15 75% 60%;
+    --primary: 180 45% 65%;
     --primary-foreground: 25 30% 8%;
 
     --secondary: 25 20% 15%;
-    --secondary-foreground: 35 20% 90%;
+    --secondary-foreground: 180 20% 90%;
 
     --muted: 25 15% 20%;
-    --muted-foreground: 30 15% 70%;
+    --muted-foreground: 180 15% 70%;
 
-    --accent: 45 85% 65%;
+    --accent: 8 70% 60%;
     --accent-foreground: 25 30% 8%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 35 25% 96%;
+    --destructive-foreground: 180 25% 95%;
 
     --border: 25 20% 18%;
     --input: 25 20% 15%;
-    --ring: 15 75% 60%;
+    --ring: 180 45% 65%;
 
     --sidebar-background: 25 25% 10%;
-    --sidebar-foreground: 35 20% 90%;
-    --sidebar-primary: 15 75% 60%;
+    --sidebar-foreground: 180 20% 90%;
+    --sidebar-primary: 180 45% 65%;
     --sidebar-primary-foreground: 25 30% 8%;
     --sidebar-accent: 25 15% 20%;
-    --sidebar-accent-foreground: 35 20% 90%;
+    --sidebar-accent-foreground: 180 20% 90%;
     --sidebar-border: 25 15% 20%;
-    --sidebar-ring: 15 75% 60%;
+    --sidebar-ring: 180 45% 65%;
   }
 }
 

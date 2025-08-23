@@ -17,7 +17,7 @@ const Navigation = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Band Logo/Name */}
-          <Link to="/" className="text-2xl font-bold text-foreground hover:text-accent transition-colors">
+          <Link to="/" className="text-2xl font-bold text-primary hover:text-accent transition-colors tracking-wider">
             SOUTHBANK
           </Link>
 
@@ -28,9 +28,9 @@ const Navigation = () => {
                 key={item.path}
                 to={item.path}
                 className={cn(
-                  "text-sm font-medium transition-all duration-300 hover:text-accent relative",
+                  "text-sm font-medium transition-all duration-300 hover:text-primary relative",
                   location.pathname === item.path
-                    ? "text-accent after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-gradient-accent after:rounded-full"
+                    ? "text-primary after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-gradient-teal after:rounded-full"
                     : "text-muted-foreground hover:text-foreground"
                 )}
               >

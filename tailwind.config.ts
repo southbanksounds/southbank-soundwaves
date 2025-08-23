@@ -62,20 +62,20 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Band-specific design tokens - Americana Power Pop
-				band: {
-					primary: 'hsl(var(--band-primary))',
-					secondary: 'hsl(var(--band-secondary))',
-					accent: 'hsl(var(--band-accent))',
-					warm: 'hsl(var(--band-warm))',
-					dark: 'hsl(var(--band-dark))',
-					rust: 'hsl(var(--band-rust))'
+				// Southbank Brand Tokens - From actual visual identity
+				southbank: {
+					teal: 'hsl(var(--southbank-teal))',
+					rust: 'hsl(var(--southbank-rust))',
+					coral: 'hsl(var(--southbank-coral))',
+					cream: 'hsl(var(--southbank-cream))',
+					dark: 'hsl(var(--southbank-dark))',
+					'light-teal': 'hsl(var(--southbank-light-teal))'
 				}
 			},
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-accent': 'var(--gradient-accent)',
-				'gradient-retro': 'var(--gradient-retro)',
+				'gradient-teal': 'var(--gradient-teal)',
 				'gradient-warm': 'var(--gradient-warm)'
 			},
 			boxShadow: {
