@@ -20,22 +20,16 @@ const Home = () => {
             Power pop melodies with americana heart
           </p>
           
-          {/* Featured Video */}
+          {/* Featured Image */}
           <div className="mb-8">
             <Card className="bg-card/90 backdrop-blur-sm border-border p-6 shadow-warm">
-              <div className="aspect-video rounded-lg overflow-hidden">
-                <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                  title="Southbank - Latest Track"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+              <div className="rounded-lg overflow-hidden">
+                <img
+                  className="w-full h-auto"
+                  src="/lovable-uploads/c4cc63c7-61fd-4f69-a554-387f92518985.png"
+                  alt="Southbank band members sitting together on a teal couch in a cozy room with exposed brick walls"
+                />
               </div>
-              <h3 className="text-xl font-semibold mt-4 text-foreground">
-                Latest Release: "City Echoes"
-              </h3>
             </Card>
           </div>
 
