@@ -39,14 +39,24 @@ const Gallery = () => {
 
   const videos = [
     {
-      src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      title: "Southbank - City Echoes (Official Music Video)",
-      description: "Our latest single featuring atmospheric visuals from the urban landscape."
+      src: "https://www.youtube.com/embed/ggCygyJNlFE",
+      title: "Southbank - Official Music Video",
+      description: "Watch our latest official music video featuring the full band."
     },
     {
-      src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      title: "Behind the Scenes: Recording 'Midnight Reflections'",
-      description: "Take a look at our creative process during the EP recording sessions."
+      src: "https://www.youtube.com/embed/I6JiLn0dd9Q",
+      title: "Southbank - Live Performance",
+      description: "Live performance capturing our power pop sound."
+    },
+    {
+      src: "https://www.youtube.com/embed/LkIMf9IhPvo",
+      title: "Southbank - Music Video",
+      description: "Another look at our music and visual style."
+    },
+    {
+      src: "https://www.youtube.com/embed/i0zGBnn5ZD0",
+      title: "Southbank - Performance Video",
+      description: "Experience our catchy melodies and jangly guitars."
     }
   ];
 
