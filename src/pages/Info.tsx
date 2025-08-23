@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mail, ExternalLink, Users } from "lucide-react";
+import { Mail, ExternalLink, Users, Instagram, Facebook, Music } from "lucide-react";
 
 const Info = () => {
   return (
@@ -93,6 +93,89 @@ const Info = () => {
                   <a href="mailto:hello@southbankband.com">
                     Contact Us
                     <Mail className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+              </Card>
+            </div>
+          </section>
+
+          {/* Social Media Section */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-8 text-foreground text-center">
+              Follow Us
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Instagram */}
+              <Card className="p-6 bg-card border-border text-center hover:shadow-warm transition-shadow">
+                <Instagram className="h-10 w-10 mx-auto mb-4 text-accent" />
+                <h3 className="text-lg font-semibold mb-2 text-foreground">
+                  Instagram
+                </h3>
+                <p className="text-muted-foreground mb-4 text-sm">
+                  Behind-the-scenes content and updates
+                </p>
+                <Button 
+                  asChild 
+                  variant="outline"
+                  className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+                >
+                  <a 
+                    href="https://www.instagram.com/southbanksounds/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    @southbanksounds
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+              </Card>
+
+              {/* Facebook */}
+              <Card className="p-6 bg-card border-border text-center hover:shadow-warm transition-shadow">
+                <Facebook className="h-10 w-10 mx-auto mb-4 text-primary" />
+                <h3 className="text-lg font-semibold mb-2 text-foreground">
+                  Facebook
+                </h3>
+                <p className="text-muted-foreground mb-4 text-sm">
+                  Show announcements and community
+                </p>
+                <Button 
+                  asChild 
+                  variant="outline"
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                >
+                  <a 
+                    href="https://www.facebook.com/profile.php?id=61577176394539" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    Follow Page
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+              </Card>
+
+              {/* Bandcamp */}
+              <Card className="p-6 bg-card border-border text-center hover:shadow-warm transition-shadow">
+                <Music className="h-10 w-10 mx-auto mb-4 text-secondary" />
+                <h3 className="text-lg font-semibold mb-2 text-foreground">
+                  Bandcamp
+                </h3>
+                <p className="text-muted-foreground mb-4 text-sm">
+                  Direct music sales and exclusive releases
+                </p>
+                <Button 
+                  asChild 
+                  variant="outline"
+                  className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground"
+                >
+                  <a 
+                    href="https://southbanksounds.bandcamp.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    Listen & Buy
+                    <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
               </Card>
