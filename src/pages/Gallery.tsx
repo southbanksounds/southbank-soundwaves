@@ -7,34 +7,54 @@ const Gallery = () => {
 
   const images = [
     {
-      src: "https://picsum.photos/800/600?random=10",
-      alt: "Southbank live performance at underground venue",
-      caption: "Underground venue session, 2024"
+      src: "/lovable-uploads/13bf8f0b-2b67-4a56-ad49-0432cd412931.png",
+      alt: "Southbank band members relaxing on teal couch in cozy studio space with brick walls",
+      caption: "The full band at the studio"
     },
     {
-      src: "https://picsum.photos/800/600?random=11", 
-      alt: "Band recording in studio with atmospheric lighting",
-      caption: "Studio sessions for 'City Echoes'"
+      src: "/lovable-uploads/f9d7cc4d-cafc-418d-9900-64d57dc03c15.png", 
+      alt: "Southbank five-piece band sitting together on couch in warm studio setting",
+      caption: "Five wayward souls who found each other"
     },
     {
-      src: "https://picsum.photos/800/600?random=12",
-      alt: "Southbank performing at outdoor festival",
-      caption: "Summer festival performance"
+      src: "/lovable-uploads/4d5f0164-dbd7-477f-90b8-61cd94868261.png",
+      alt: "Southbank band members in casual studio pose with some sitting and standing",
+      caption: "Behind the scenes at rehearsal"
     },
     {
-      src: "https://picsum.photos/800/600?random=13",
-      alt: "Close-up of band instruments and equipment",
-      caption: "Behind the scenes setup"
+      src: "/lovable-uploads/e64e014a-1ba8-4ddb-afe5-492e7675a664.png",
+      alt: "Southbank performing live with full band setup including keys, bass, guitar and drums",
+      caption: "Live performance - power pop in action"
     },
     {
-      src: "https://picsum.photos/800/600?random=14",
-      alt: "Band members in urban landscape setting",
-      caption: "Urban landscapes photo shoot"
+      src: "/lovable-uploads/414996e7-f8f9-4d7d-8099-cad289fd18ba.png",
+      alt: "Southbank guitarist in intimate rehearsal setting with orange guitar visible in foreground",
+      caption: "Jangly guitars and catchy melodies"
     },
     {
-      src: "https://picsum.photos/800/600?random=15",
-      alt: "Concert crowd enjoying Southbank performance",
-      caption: "Connecting with our audience"
+      src: "/lovable-uploads/9ad0f9f7-308d-4a5e-b255-ecb851e2a50d.png",
+      alt: "Tony Lynch on drums with red Pearl kit, smiling during rehearsal",
+      caption: "Tony Lynch keeping the rhythm"
+    },
+    {
+      src: "/lovable-uploads/d0a0443e-f2ae-45c9-a434-4eac6208e110.png",
+      alt: "Sam Favata on lead guitar, focused during performance in casual setting",
+      caption: "Sam Favata bringing the lead guitar magic"
+    },
+    {
+      src: "/lovable-uploads/881a9465-63ab-4492-9991-569a8366f075.png",
+      alt: "Amanda Thompson on keys and Sean Heffernan on bass during rehearsal",
+      caption: "Amanda Thompson (keys) and Sean Heffernan (bass)"
+    },
+    {
+      src: "/lovable-uploads/03169752-8bd2-49b1-9cb3-479e9528f582.png",
+      alt: "Sean Heffernan playing white bass guitar in bright studio with high ceilings",
+      caption: "Sean Heffernan laying down the bass lines"
+    },
+    {
+      src: "/lovable-uploads/f46c743d-6c69-47a1-8a91-6062819b8ea6.png",
+      alt: "Jeff Neely singing and playing orange hollow-body guitar, looking upward",
+      caption: "Jeff Neely - songwriter and frontman"
     }
   ];
 
