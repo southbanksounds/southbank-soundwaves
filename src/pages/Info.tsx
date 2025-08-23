@@ -23,22 +23,22 @@ const Info = () => {
               <h2 className="text-3xl font-bold mb-6 text-foreground">Our Story</h2>
               <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
                 <p className="mb-4">
-                  Southbank emerged from the atmospheric soundscapes of London's urban landscape, where the 
-                  convergence of modern architecture and timeless river views creates a unique sonic palette. 
-                  Our music explores the intersection of electronic ambience and organic instrumentation, 
-                  crafting soundscapes that reflect the pulse of contemporary city life.
+                  Southbank is a band. It used to be a single person, but now it's a band. The sound is essentially the same—and why not, same songwriter, same frontman. But now, instead of a revolving cast of crack studio musicians, there's a full lineup—five wayward souls who found each other and agreed to spend an inordinate amount of time together to make their collaboration sound good to other people.
                 </p>
                 <p className="mb-4">
-                  Formed in 2022, we've been on a journey to create music that captures the essence of 
-                  urban solitude and connection. Our sound draws inspiration from the quiet moments found 
-                  within the bustling city - the echo of footsteps on empty streets, the hum of distant 
-                  traffic, and the reflective calm of riverside walks.
+                  There's still that sweet, familiar Americana hum underneath everything, like that old Son Volt t-shirt you refuse to retire. But if you insist on labels, it's really power pop. Expect jangly guitars, catchy melodies, and lyrics that bounce from the quirky corners of suburban life to the soul-crushing absurdity of office jobs to the tangled, beautiful, messy reality of relationships.
+                </p>
+                <p className="mb-4">
+                  Southbank began as Jeff Neely's secret songwriting hobby, a creative escape for a design executive who moonlit as the Old 97's social media and merch guru. The COVID years turned that dabbling into a full-blown dive, with encouragement (and a little help) from friends like John Dufilho of the Deathray Davies, who hopped on drums and mixed Jeff's debut album, Touching the Stove. The guest presence of Ken Bethea, lead guitarist of the aforementioned Old 97's, certainly elevated the affair.
+                </p>
+                <p className="mb-4">
+                  The overall sound bore a passing resemblance to the charming, unpretentious first Wilco album, A.M., when they were still figuring it all out but already sounded perfect. Throw in a healthy dose of Fountains of Wayne's clever-as-hell power-pop hooks, and maybe an aspirational nod to The Hold Steady's anthemic, storytelling glory. Predictably, one may also discern the unmistakable, glorious twang and swagger of Old 97's.
+                </p>
+                <p className="mb-4">
+                  One listener, upon experiencing Southbank, described it as "Catchy geek punk country rock pop," a label that was, if nothing else, concise.
                 </p>
                 <p>
-                  Through our releases, we aim to provide a sonic escape that resonates with those who 
-                  find beauty in the overlooked corners of metropolitan life. Each track is a postcard 
-                  from the city's soul, inviting listeners to explore their own relationship with the 
-                  spaces they inhabit.
+                  After hitting a songwriting retreat and realizing he was the only one not in a band, Jeff decided the world deserved to see these songs come to life in rooms full of sweaty people, so a call was put out for suitable musicians. And just like that, Southbank became a "they" instead of a "he." With the additions of Tony Lynch (drums), Sean Heffernan (bass), Amanda Thompson (keys), and Sam Favata (lead guitar), Southbank now truly can be called a band, and it's probably best you arrange to see them live ASAP.
                 </p>
               </div>
             </Card>
