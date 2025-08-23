@@ -129,6 +129,26 @@ const Shows = () => {
           </div>
         </section>
 
+        {/* Bandsintown Widget */}
+        <section className="mb-20">
+          <h2 className="text-3xl font-bold mb-8 text-foreground text-center">
+            Live from Bandsintown
+          </h2>
+          <Card className="p-8 bg-card border-border">
+            <div className="aspect-[4/3] w-full max-w-4xl mx-auto">
+              <iframe
+                src="https://widget.bandsintown.com/main/artist/15601908?t=all"
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                scrolling="no"
+                className="rounded-lg"
+                title="Southbank tour dates on Bandsintown"
+              ></iframe>
+            </div>
+          </Card>
+        </section>
+
         {/* Bandsintown Integration */}
         <section className="mb-20">
           <Card className="p-8 bg-gradient-hero border-border text-center">
@@ -143,7 +163,7 @@ const Shows = () => {
               size="lg"
               className="bg-accent text-accent-foreground hover:bg-accent/90"
             >
-              <a href="https://bandsintown.com/southbank" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.bandsintown.com/a/15601908-southbank" target="_blank" rel="noopener noreferrer">
                 Follow on Bandsintown
                 <ExternalLink className="ml-2 h-4 w-4" />
               </a>
