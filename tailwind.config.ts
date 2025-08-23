@@ -62,24 +62,27 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Band-specific design tokens
+				// Band-specific design tokens - Americana Power Pop
 				band: {
 					primary: 'hsl(var(--band-primary))',
+					secondary: 'hsl(var(--band-secondary))',
 					accent: 'hsl(var(--band-accent))',
+					warm: 'hsl(var(--band-warm))',
 					dark: 'hsl(var(--band-dark))',
-					darker: 'hsl(var(--band-darker))',
-					muted: 'hsl(var(--band-muted))'
+					rust: 'hsl(var(--band-rust))'
 				}
 			},
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-accent': 'var(--gradient-accent)',
-				'gradient-gold': 'var(--gradient-gold)'
+				'gradient-retro': 'var(--gradient-retro)',
+				'gradient-warm': 'var(--gradient-warm)'
 			},
 			boxShadow: {
 				'glow': 'var(--shadow-glow)',
 				'accent': 'var(--shadow-accent)',
-				'dark': 'var(--shadow-dark)'
+				'warm': 'var(--shadow-warm)',
+				'vintage': 'var(--shadow-vintage)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)',

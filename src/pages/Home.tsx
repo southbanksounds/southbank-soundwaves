@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Play, Music, Calendar, Users } from "lucide-react";
-import heroImage from "@/assets/hero-band.jpg";
+import heroImage from "@/assets/hero-retro.jpg";
 
 const Home = () => {
   return (
@@ -22,7 +22,7 @@ const Home = () => {
             SOUTHBANK
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Atmospheric sounds from the urban landscape
+            Power pop melodies with americana heart
           </p>
           
           {/* Featured Video */}
