@@ -7,7 +7,7 @@ const Shows = () => {
 
   const pastShows = [
     {
-      date: "2025-08-17",
+      date: "2024-08-17",
       venue: "Sahara Lounge",
       city: "Austin, TX"
     }
@@ -15,8 +15,10 @@ const Shows = () => {
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { 
-      month: 'short', 
+    return date.toLocaleDateString('en-GB', { 
+      weekday: 'long',
+      year: 'numeric', 
+      month: 'long', 
       day: 'numeric' 
     });
   };
