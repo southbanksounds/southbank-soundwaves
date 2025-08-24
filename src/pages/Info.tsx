@@ -103,28 +103,49 @@ const Info = () => {
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               {/* Instagram */}
-              <Card className="p-6 bg-card border-border text-center hover:shadow-warm transition-shadow">
-                <Instagram className="h-10 w-10 mx-auto mb-4 text-accent" />
-                <h3 className="text-lg font-semibold text-foreground">
-                  Instagram
-                </h3>
-              </Card>
+              <a 
+                href="https://www.instagram.com/southbanksounds/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Card className="p-6 bg-card border-border text-center hover:shadow-warm transition-shadow cursor-pointer">
+                  <Instagram className="h-10 w-10 mx-auto mb-4 text-accent" />
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Instagram
+                  </h3>
+                </Card>
+              </a>
 
               {/* Facebook */}
-              <Card className="p-6 bg-card border-border text-center hover:shadow-warm transition-shadow">
-                <Facebook className="h-10 w-10 mx-auto mb-4 text-primary" />
-                <h3 className="text-lg font-semibold text-foreground">
-                  Facebook
-                </h3>
-              </Card>
+              <a 
+                href="https://www.facebook.com/profile.php?id=61577176394539" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Card className="p-6 bg-card border-border text-center hover:shadow-warm transition-shadow cursor-pointer">
+                  <Facebook className="h-10 w-10 mx-auto mb-4 text-primary" />
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Facebook
+                  </h3>
+                </Card>
+              </a>
 
               {/* Bandcamp */}
-              <Card className="p-6 bg-card border-border text-center hover:shadow-warm transition-shadow">
-                <Music className="h-10 w-10 mx-auto mb-4 text-secondary" />
-                <h3 className="text-lg font-semibold text-foreground">
-                  Bandcamp
-                </h3>
-              </Card>
+              <a 
+                href="https://southbanksounds.bandcamp.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Card className="p-6 bg-card border-border text-center hover:shadow-warm transition-shadow cursor-pointer">
+                  <Music className="h-10 w-10 mx-auto mb-4 text-secondary" />
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Bandcamp
+                  </h3>
+                </Card>
+              </a>
             </div>
           </section>
 
