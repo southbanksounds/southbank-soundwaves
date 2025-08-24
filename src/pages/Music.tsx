@@ -89,6 +89,19 @@ const Music = () => {
                     <p className="text-accent font-medium mb-4">{release.year}</p>
                   </div>
 
+                  {/* Spotify Embed */}
+                  <div className="mb-6">
+                    <iframe 
+                      src={release.spotifyUrl.replace('open.spotify.com', 'open.spotify.com/embed').split('?')[0]}
+                      width="100%" 
+                      height="152" 
+                      frameBorder="0" 
+                      allowTransparency={true} 
+                      allow="encrypted-media"
+                      className="rounded-lg"
+                    ></iframe>
+                  </div>
+
                   {/* Streaming Links */}
                   <div className="flex flex-wrap gap-4">
                     <Button 
