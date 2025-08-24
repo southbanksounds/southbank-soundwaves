@@ -5,13 +5,13 @@ import { ExternalLink, Play, Music as MusicIcon } from "lucide-react";
 const Music = () => {
   const releases = [
     {
-      title: "City Echoes",
+      title: "Lost Cause",
       year: "2024",
       type: "Single",
-      spotifyUrl: "https://open.spotify.com/track/example",
-      appleMusicUrl: "https://music.apple.com/us/album/example",
-      bandcampUrl: "https://southbanksounds.bandcamp.com/track/example",
-      artwork: "https://picsum.photos/400/400?random=1"
+      spotifyUrl: "https://open.spotify.com/track/6dxi01IXK298SYR4E3i9ZD?si=a099578ccefd4918",
+      appleMusicUrl: "https://music.apple.com/us/song/lost-cause/1756037646",
+      bandcampUrl: "https://southbanksounds.bandcamp.com/track/lost-cause",
+      artwork: "/lovable-uploads/ddfdc6c4-87ff-4758-95c5-439c179c5653.png"
     },
     {
       title: "Midnight Reflections EP",
