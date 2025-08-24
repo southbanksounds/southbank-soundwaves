@@ -113,11 +113,8 @@ const Gallery = () => {
                      className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                    />
-                   <div className="absolute inset-0 bg-background/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                     <p className="text-foreground text-center px-4 font-medium">
-                       {image.caption}
-                     </p>
-                   </div>
+                    <div className="absolute inset-0 bg-background/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    </div>
                  </div>
               </Card>
             ))}
