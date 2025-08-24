@@ -30,7 +30,7 @@ const Footer = () => {
           <div className="text-center md:text-left mb-6 md:mb-0">
             <h3 className="text-xl font-bold text-foreground mb-2">SOUTHBANK</h3>
             <p className="text-muted-foreground text-sm">
-              (c) 2025 Southbank LLC. All rights reserved.
+              © 2025 Southbank LLC. All rights reserved.
             </p>
           </div>
 
