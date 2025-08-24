@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ExternalLink, Play } from "lucide-react";
+import { ExternalLink, Play, Music as MusicIcon } from "lucide-react";
 
 const Music = () => {
   const releases = [
@@ -10,6 +10,7 @@ const Music = () => {
       type: "Single",
       spotifyUrl: "https://open.spotify.com/track/example",
       appleMusicUrl: "https://music.apple.com/us/album/example",
+      bandcampUrl: "https://southbanksounds.bandcamp.com/track/example",
       artwork: "https://picsum.photos/400/400?random=1"
     },
     {
@@ -18,6 +19,7 @@ const Music = () => {
       type: "EP",
       spotifyUrl: "https://open.spotify.com/album/example",
       appleMusicUrl: "https://music.apple.com/us/album/example",
+      bandcampUrl: "https://southbanksounds.bandcamp.com/album/example",
       artwork: "https://picsum.photos/400/400?random=2"
     },
     {
@@ -26,6 +28,7 @@ const Music = () => {
       type: "Album",
       spotifyUrl: "https://open.spotify.com/album/example",
       appleMusicUrl: "https://music.apple.com/us/album/example",
+      bandcampUrl: "https://southbanksounds.bandcamp.com/album/example",
       artwork: "https://picsum.photos/400/400?random=3"
     }
   ];
@@ -89,6 +92,18 @@ const Music = () => {
                       <a href={release.appleMusicUrl} target="_blank" rel="noopener noreferrer">
                         <Play className="mr-2 h-4 w-4" />
                         Apple Music
+                        <ExternalLink className="ml-2 h-4 w-4" />
+                      </a>
+                    </Button>
+
+                    <Button 
+                      variant="outline" 
+                      asChild 
+                      className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground"
+                    >
+                      <a href={release.bandcampUrl} target="_blank" rel="noopener noreferrer">
+                        <MusicIcon className="mr-2 h-4 w-4" />
+                        Bandcamp
                         <ExternalLink className="ml-2 h-4 w-4" />
                       </a>
                     </Button>
