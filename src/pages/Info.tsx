@@ -58,8 +58,9 @@ const Info = () => {
                 </h3>
                 <Button 
                   asChild 
+                  variant="outline"
                   size="lg"
-                  className="bg-accent text-accent-foreground hover:bg-accent/90"
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                 >
                   <a 
                     href="https://mailchi.mp/f69b33511105/southbank-signup" 
