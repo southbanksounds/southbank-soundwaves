@@ -54,22 +54,19 @@ const Info = () => {
               <Card className="p-6 bg-gradient-hero border-border text-center">
                 <Users className="h-12 w-12 mx-auto mb-4 text-accent" />
                 <h3 className="text-xl font-semibold mb-4 text-foreground">
-                  Join Our Community
+                  Sign up for Email List
                 </h3>
-                <p className="text-muted-foreground mb-6">
-                  Stay updated with exclusive content, early access to new releases, and behind-the-scenes insights.
-                </p>
                 <Button 
                   asChild 
                   size="lg"
                   className="bg-accent text-accent-foreground hover:bg-accent/90"
                 >
                   <a 
-                    href="https://mailchimp.com/southbank-signup" 
+                    href="https://mailchi.mp/f69b33511105/southbank-signup" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
-                    Sign Up for Updates
+                    Sign Up
                     <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
