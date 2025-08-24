@@ -17,8 +17,12 @@ const Navigation = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Band Logo/Name */}
-          <Link to="/" className="text-2xl font-bold text-primary hover:text-accent transition-colors tracking-wider">
-            SOUTHBANK
+          <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
+            <img 
+              src="/lovable-uploads/35dd3003-f5d9-4591-b3ae-5ebbd004a030.png" 
+              alt="Southbank" 
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Navigation Menu */}
