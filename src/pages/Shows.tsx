@@ -3,40 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Calendar, MapPin, Clock, ExternalLink } from "lucide-react";
 
 const Shows = () => {
-  const upcomingShows = [
-    {
-      date: "2024-03-15",
-      venue: "The Underground",
-      city: "London, UK",
-      time: "8:00 PM",
-      ticketUrl: "https://bandsintown.com/southbank",
-      description: "Intimate acoustic set in London's premier underground venue"
-    },
-    {
-      date: "2024-03-22",
-      venue: "Riverside Festival",
-      city: "Manchester, UK",
-      time: "6:30 PM",
-      ticketUrl: "https://bandsintown.com/southbank",
-      description: "Festival performance featuring full band setup"
-    },
-    {
-      date: "2024-04-05",
-      venue: "Echo Chamber",
-      city: "Bristol, UK", 
-      time: "7:45 PM",
-      ticketUrl: "https://bandsintown.com/southbank",
-      description: "Album release party for 'Urban Landscapes'"
-    },
-    {
-      date: "2024-04-18",
-      venue: "Warehouse Sessions",
-      city: "Birmingham, UK",
-      time: "9:00 PM",
-      ticketUrl: "https://bandsintown.com/southbank",
-      description: "Late night experimental set in converted warehouse space"
-    }
-  ];
+  const upcomingShows: any[] = [];
 
   const pastShows = [
     {
@@ -82,72 +49,74 @@ const Shows = () => {
             Upcoming Shows
           </h2>
           <div className="grid gap-6 max-w-4xl mx-auto">
-            {upcomingShows.map((show, index) => (
-              <Card key={index} className="p-6 bg-card border-border hover:shadow-glow transition-all duration-500">
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                  <div className="flex-1">
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-4">
-                      <div className="flex items-center text-accent">
-                        <Calendar className="mr-2 h-5 w-5" />
-                        <span className="font-semibold">{formatDate(show.date)}</span>
+            {upcomingShows.length > 0 ? (
+              upcomingShows.map((show, index) => (
+                <Card key={index} className="p-6 bg-card border-border hover:shadow-glow transition-all duration-500">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div className="flex-1">
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-4">
+                        <div className="flex items-center text-accent">
+                          <Calendar className="mr-2 h-5 w-5" />
+                          <span className="font-semibold">{formatDate(show.date)}</span>
+                        </div>
+                        <div className="flex items-center text-muted-foreground">
+                          <Clock className="mr-2 h-4 w-4" />
+                          <span>{show.time}</span>
+                        </div>
                       </div>
-                      <div className="flex items-center text-muted-foreground">
-                        <Clock className="mr-2 h-4 w-4" />
-                        <span>{show.time}</span>
+                      
+                      <h3 className="text-2xl font-bold mb-2 text-foreground">
+                        {show.venue}
+                      </h3>
+                      
+                      <div className="flex items-center text-muted-foreground mb-3">
+                        <MapPin className="mr-2 h-4 w-4" />
+                        <span>{show.city}</span>
                       </div>
+                      
+                      <p className="text-muted-foreground">
+                        {show.description}
+                      </p>
                     </div>
                     
-                    <h3 className="text-2xl font-bold mb-2 text-foreground">
-                      {show.venue}
-                    </h3>
-                    
-                    <div className="flex items-center text-muted-foreground mb-3">
-                      <MapPin className="mr-2 h-4 w-4" />
-                      <span>{show.city}</span>
+                    <div className="flex-shrink-0">
+                      <Button 
+                        asChild 
+                        size="lg"
+                        className="bg-gradient-accent text-accent-foreground hover:shadow-accent"
+                      >
+                        <a href={show.ticketUrl} target="_blank" rel="noopener noreferrer">
+                          Get Tickets
+                          <ExternalLink className="ml-2 h-4 w-4" />
+                        </a>
+                      </Button>
                     </div>
-                    
-                    <p className="text-muted-foreground">
-                      {show.description}
-                    </p>
                   </div>
-                  
-                  <div className="flex-shrink-0">
-                    <Button 
-                      asChild 
-                      size="lg"
-                      className="bg-gradient-accent text-accent-foreground hover:shadow-accent"
-                    >
-                      <a href={show.ticketUrl} target="_blank" rel="noopener noreferrer">
-                        Get Tickets
-                        <ExternalLink className="ml-2 h-4 w-4" />
-                      </a>
-                    </Button>
-                  </div>
-                </div>
+                </Card>
+              ))
+            ) : (
+              <Card className="p-8 bg-card border-border text-center">
+                <h3 className="text-xl font-semibold mb-3 text-foreground">
+                  No Upcoming Shows
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  We're currently working on new dates. Follow us on Bandsintown to be the first to know when new shows are announced.
+                </p>
+                <Button 
+                  asChild 
+                  size="lg"
+                  className="bg-accent text-accent-foreground hover:bg-accent/90"
+                >
+                  <a href="https://www.bandsintown.com/a/15601908-southbank" target="_blank" rel="noopener noreferrer">
+                    Follow on Bandsintown
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
               </Card>
-            ))}
+            )}
           </div>
         </section>
 
-        {/* Bandsintown Widget */}
-        <section className="mb-20">
-          <h2 className="text-3xl font-bold mb-8 text-foreground text-center">
-            Live from Bandsintown
-          </h2>
-          <Card className="p-8 bg-card border-border">
-            <div className="aspect-[4/3] w-full max-w-4xl mx-auto">
-              <iframe
-                src="https://widget.bandsintown.com/main/artist/15601908?t=all"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                scrolling="no"
-                className="rounded-lg"
-                title="Southbank tour dates on Bandsintown"
-              ></iframe>
-            </div>
-          </Card>
-        </section>
 
         {/* Bandsintown Integration */}
         <section className="mb-20">
