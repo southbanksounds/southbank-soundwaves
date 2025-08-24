@@ -39,6 +39,15 @@ const Music = () => {
       appleMusicUrl: "https://music.apple.com/us/song/empty-nest/1671277218",
       bandcampUrl: "https://southbanksounds.bandcamp.com/track/empty-nest",
       artwork: "/lovable-uploads/e0f0bcc9-178e-4f1f-a98f-aa29189c9f53.png"
+    },
+    {
+      title: "Touching the Stove",
+      year: "2022",
+      type: "Album",
+      spotifyUrl: "https://open.spotify.com/album/1w38jLHxK3j0FOBzAYRuuX?si=DvUXGIt8Tc2Up42lsi7gbw",
+      appleMusicUrl: "https://music.apple.com/us/album/touching-the-stove/1611448117",
+      bandcampUrl: "https://southbanksounds.bandcamp.com/album/touching-the-stove",
+      artwork: "/lovable-uploads/f989b5c3-0ab8-404a-a408-6ba3ae93b9f0.png"
     }
   ];
 
