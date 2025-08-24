@@ -21,7 +21,7 @@ const Navigation = () => {
             <img 
               src="/lovable-uploads/35dd3003-f5d9-4591-b3ae-5ebbd004a030.png" 
               alt="Southbank" 
-              className="h-8 w-auto"
+              className="h-10 w-auto"
             />
           </Link>
 
