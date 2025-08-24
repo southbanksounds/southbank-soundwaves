@@ -99,7 +99,7 @@ const Music = () => {
                     <Button 
                       variant="outline" 
                       asChild 
-                      className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground"
+                      className="border-secondary text-foreground hover:bg-secondary hover:text-secondary-foreground"
                     >
                       <a href={release.bandcampUrl} target="_blank" rel="noopener noreferrer">
                         <MusicIcon className="mr-2 h-4 w-4" />
