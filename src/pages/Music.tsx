@@ -39,11 +39,8 @@ const Music = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
-            Our Music
+            Music
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Explore our discography and discover the sounds that define Southbank's atmospheric journey.
-          </p>
         </div>
 
         {/* Releases Grid */}
@@ -117,8 +114,19 @@ const Music = () => {
             <p className="text-muted-foreground mb-6">
               Be the first to hear our new releases and exclusive content.
             </p>
-            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-              Join Our Mailing List
+            <Button 
+              asChild
+              size="lg" 
+              className="bg-accent text-accent-foreground hover:bg-accent/90"
+            >
+              <a 
+                href="https://mailchi.mp/f69b33511105/southbank-signup" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Join Our Mailing List
+                <ExternalLink className="ml-2 h-4 w-4" />
+              </a>
             </Button>
           </Card>
         </div>
