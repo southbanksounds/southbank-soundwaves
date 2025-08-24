@@ -161,7 +161,8 @@ const Info = () => {
                 <Button 
                   asChild
                   variant="outline"
-                  className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+                  size="lg"
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                 >
                   <a 
                     href="https://www.dropbox.com/scl/fo/bvbrtdw4r0fprobwtbz40/AOXe0zW0GFA0ENaNu_KOX_4?rlkey=bgkthx6y6b8yq7cuzknk3ov2i&st=vxn4axeg&dl=0"
@@ -175,7 +176,8 @@ const Info = () => {
                 <Button 
                   asChild
                   variant="outline"
-                  className="border-muted text-muted-foreground hover:bg-muted hover:text-foreground"
+                  size="lg"
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                 >
                   <a 
                     href="https://www.dropbox.com/scl/fo/h7rvvtfo6t15v364bhhsw/ACLXZlImvtA_XMWbF809MPQ?rlkey=mbemltgb9cty1cyai4e7ernxh&st=reoqi1nw&dl=0"
