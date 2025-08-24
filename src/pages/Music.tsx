@@ -14,13 +14,13 @@ const Music = () => {
       artwork: "/lovable-uploads/ddfdc6c4-87ff-4758-95c5-439c179c5653.png"
     },
     {
-      title: "Midnight Reflections EP",
-      year: "2023",
-      type: "EP",
-      spotifyUrl: "https://open.spotify.com/album/example",
-      appleMusicUrl: "https://music.apple.com/us/album/example",
-      bandcampUrl: "https://southbanksounds.bandcamp.com/album/example",
-      artwork: "https://picsum.photos/400/400?random=2"
+      title: "All Those Other Guys",
+      year: "2024",
+      type: "Single",
+      spotifyUrl: "https://open.spotify.com/track/6rED0UggMUjSvSxi7Wryxh?si=7c74fe60c4214824",
+      appleMusicUrl: "https://music.apple.com/us/song/all-those-other-guys/1733202335",
+      bandcampUrl: "https://southbanksounds.bandcamp.com/track/all-those-other-guys",
+      artwork: "/lovable-uploads/515e3eec-17ab-413a-8b55-fcf316012974.png"
     },
     {
       title: "Urban Landscapes",
