@@ -45,6 +45,14 @@ const Gallery = () => {
     {
       src: "/lovable-uploads/f46c743d-6c69-47a1-8a91-6062819b8ea6.png",
       alt: "Jeff Neely singing and playing orange hollow-body guitar, looking upward"
+    },
+    {
+      src: "/lovable-uploads/c16affaf-90f4-4b5d-86e4-4d9cf7def07c.png",
+      alt: "Southbank band members posing together against weathered wall with artistic lettering"
+    },
+    {
+      src: "/lovable-uploads/05c5879e-9f91-4f05-b88a-f3ae28922261.png",
+      alt: "Southbank performing live on stage with colorful lighting and full band setup"
     }
   ];
 
