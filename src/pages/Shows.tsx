@@ -7,16 +7,10 @@ const Shows = () => {
 
   const pastShows = [
     {
-      date: "2024-02-14",
-      venue: "The Cavern",
-      city: "Liverpool, UK",
-      description: "Sold out Valentine's Day performance"
-    },
-    {
-      date: "2024-01-28",
-      venue: "Indie Nights",
-      city: "Leeds, UK",
-      description: "Supporting emerging artists showcase"
+      date: "2025-08-17",
+      venue: "Sahara Lounge",
+      city: "Austin, TX",
+      description: "Live performance at Austin's premier music venue"
     }
   ];
 
