@@ -65,18 +65,9 @@ const Music = () => {
         <div className="grid gap-8 max-w-4xl mx-auto">
           {releases.map((release, index) => (
             <Card key={index} className="p-8 bg-card border-border hover:shadow-glow transition-all duration-500">
-              <div className="flex flex-col md:flex-row gap-6">
-                {/* Artwork */}
-                <div className="flex-shrink-0">
-                  <img
-                    src={release.artwork}
-                    alt={`${release.title} artwork`}
-                    className="w-48 h-48 object-cover rounded-lg shadow-dark"
-                  />
-                </div>
-
+              <div className="space-y-6">
                 {/* Release Info */}
-                <div className="flex-1">
+                <div>
                   <div className="mb-4">
                     <div className="flex items-center gap-3 mb-2">
                       <h3 className="text-2xl font-bold text-foreground">
@@ -139,11 +130,11 @@ const Music = () => {
                       </a>
                     </Button>
                   </div>
-                </div>
-              </div>
-            </Card>
-          ))}
-        </div>
+                 </div>
+               </div>
+             </Card>
+           ))}
+         </div>
 
         {/* Call to Action */}
         <div className="text-center mt-16">
