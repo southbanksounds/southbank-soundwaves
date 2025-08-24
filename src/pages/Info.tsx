@@ -49,7 +49,9 @@ const Info = () => {
             <div className="grid md:grid-cols-2 gap-8">
               {/* Email List Signup */}
               <Card className="p-6 bg-secondary border-border text-center">
-                <Users className="h-12 w-12 mx-auto mb-4 text-accent" />
+                <div className="h-12 w-12 mx-auto mb-4 text-accent flex items-center justify-center">
+                  <Mail className="h-10 w-10" />
+                </div>
                 <h3 className="text-xl font-semibold mb-4 text-foreground">
                   Sign up for Email List
                 </h3>
