@@ -96,8 +96,9 @@ const Music = () => {
                   {/* Streaming Links */}
                   <div className="flex flex-wrap gap-4">
                     <Button 
+                      variant="outline"
                       asChild 
-                      className="bg-gradient-accent text-accent-foreground hover:shadow-accent"
+                      className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
                     >
                       <a href={release.spotifyUrl} target="_blank" rel="noopener noreferrer">
                         <Play className="mr-2 h-4 w-4" />
@@ -121,7 +122,7 @@ const Music = () => {
                     <Button 
                       variant="outline" 
                       asChild 
-                      className="border-secondary text-foreground hover:bg-secondary hover:text-secondary-foreground"
+                      className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
                     >
                       <a href={release.bandcampUrl} target="_blank" rel="noopener noreferrer">
                         <MusicIcon className="mr-2 h-4 w-4" />
