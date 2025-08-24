@@ -30,6 +30,15 @@ const Music = () => {
       appleMusicUrl: "https://music.apple.com/us/song/cant-say-why/1686842746",
       bandcampUrl: "https://southbanksounds.bandcamp.com/track/cant-say-why",
       artwork: "/lovable-uploads/aa023faa-ed5b-4733-9133-fc6276d3242a.png"
+    },
+    {
+      title: "Empty Nest",
+      year: "2023",
+      type: "Single",
+      spotifyUrl: "https://open.spotify.com/track/2G6XTPFPKUEIe8KuZ0xAWe?si=7b0dfe4b62a946e0",
+      appleMusicUrl: "https://music.apple.com/us/song/empty-nest/1671277218",
+      bandcampUrl: "https://southbanksounds.bandcamp.com/track/empty-nest",
+      artwork: "/lovable-uploads/e0f0bcc9-178e-4f1f-a98f-aa29189c9f53.png"
     }
   ];
 
