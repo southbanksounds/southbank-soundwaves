@@ -24,7 +24,7 @@ const Home = () => {
         {/* CTA Buttons positioned at bottom */}
         <div className="relative z-10 pb-20 px-6">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-warm">
+            <Button asChild variant="outline" size="lg" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground bg-background/80 backdrop-blur-sm">
               <Link to="/music">
                 <Play className="mr-2 h-5 w-5" />
                 Listen Now
