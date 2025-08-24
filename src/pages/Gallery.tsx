@@ -74,8 +74,8 @@ const Gallery = () => {
     },
     {
       src: "https://www.youtube.com/embed/i0zGBnn5ZD0",
-      title: "Southbank - Performance Video",
-      description: "Experience our catchy melodies and jangly guitars."
+      title: "Best Mistake music video",
+      description: ""
     }
   ];
 
