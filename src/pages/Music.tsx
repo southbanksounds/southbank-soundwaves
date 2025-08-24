@@ -8,7 +8,6 @@ const Music = () => {
       title: "City Echoes",
       year: "2024",
       type: "Single",
-      description: "Our latest atmospheric track exploring urban soundscapes and midnight reflections.",
       spotifyUrl: "https://open.spotify.com/track/example",
       appleMusicUrl: "https://music.apple.com/us/album/example",
       artwork: "https://picsum.photos/400/400?random=1"
@@ -17,7 +16,6 @@ const Music = () => {
       title: "Midnight Reflections EP",
       year: "2023",
       type: "EP",
-      description: "A collection of introspective pieces recorded during late-night sessions.",
       spotifyUrl: "https://open.spotify.com/album/example",
       appleMusicUrl: "https://music.apple.com/us/album/example",
       artwork: "https://picsum.photos/400/400?random=2"
@@ -26,7 +24,6 @@ const Music = () => {
       title: "Urban Landscapes",
       year: "2023",
       type: "Album",
-      description: "Our debut album capturing the essence of city life through ambient soundscapes.",
       spotifyUrl: "https://open.spotify.com/album/example",
       appleMusicUrl: "https://music.apple.com/us/album/example",
       artwork: "https://picsum.photos/400/400?random=3"
@@ -68,10 +65,7 @@ const Music = () => {
                         {release.type}
                       </span>
                     </div>
-                    <p className="text-accent font-medium mb-2">{release.year}</p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {release.description}
-                    </p>
+                    <p className="text-accent font-medium mb-4">{release.year}</p>
                   </div>
 
                   {/* Streaming Links */}
