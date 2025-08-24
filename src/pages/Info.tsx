@@ -11,9 +11,6 @@ const Info = () => {
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
             About Southbank
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Learn more about our story, our sound, and how to connect with us.
-          </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
@@ -162,18 +159,32 @@ const Info = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
+                  asChild
                   variant="outline"
                   className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
                 >
-                  Download Press Kit
-                  <ExternalLink className="ml-2 h-4 w-4" />
+                  <a 
+                    href="https://www.dropbox.com/scl/fo/bvbrtdw4r0fprobwtbz40/AOXe0zW0GFA0ENaNu_KOX_4?rlkey=bgkthx6y6b8yq7cuzknk3ov2i&st=vxn4axeg&dl=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Download Press Kit
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
                 </Button>
                 <Button 
+                  asChild
                   variant="outline"
                   className="border-muted text-muted-foreground hover:bg-muted hover:text-foreground"
                 >
-                  High-Res Photos
-                  <ExternalLink className="ml-2 h-4 w-4" />
+                  <a 
+                    href="https://www.dropbox.com/scl/fo/h7rvvtfo6t15v364bhhsw/ACLXZlImvtA_XMWbF809MPQ?rlkey=mbemltgb9cty1cyai4e7ernxh&st=reoqi1nw&dl=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    High-Res Photos
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
                 </Button>
               </div>
             </Card>
