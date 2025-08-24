@@ -74,7 +74,7 @@ const Shows = () => {
                       <Button 
                         asChild 
                         size="lg"
-                        className="bg-gradient-accent text-accent-foreground hover:shadow-accent"
+                        className="bg-primary text-primary-foreground hover:shadow-accent"
                       >
                         <a href={show.ticketUrl} target="_blank" rel="noopener noreferrer">
                           Get Tickets
@@ -111,7 +111,7 @@ const Shows = () => {
 
         {/* Bandsintown Integration */}
         <section className="mb-20">
-          <Card className="p-8 bg-gradient-hero border-border text-center">
+          <Card className="p-8 bg-secondary border-border text-center">
             <h3 className="text-2xl font-bold mb-4 text-foreground">
               Stay Updated on Tour Dates
             </h3>

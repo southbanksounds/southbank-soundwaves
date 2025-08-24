@@ -48,12 +48,6 @@ All colors MUST be HSL.
     --southbank-dark: 191 73% 9%;        /* Dark cyan */
     --southbank-light-teal: 194 100% 79%; /* Light cyan */
     
-    /* Gradients - Based on new palette */
-    --gradient-hero: linear-gradient(135deg, hsl(194 100% 79%), hsl(357 100% 76%));
-    --gradient-accent: linear-gradient(135deg, hsl(357 100% 76%), hsl(47 96% 70%));
-    --gradient-teal: linear-gradient(135deg, hsl(194 100% 79%), hsl(194 80% 85%));
-    --gradient-warm: linear-gradient(180deg, hsl(47 96% 70%), hsl(194 100% 79%));
-    
     /* Shadows - Updated for new palette */
     --shadow-glow: 0 0 30px hsl(194 100% 79% / 0.3);
     --shadow-accent: 0 8px 25px hsl(357 100% 76% / 0.2);

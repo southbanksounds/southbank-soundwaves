@@ -34,7 +34,7 @@ const Navigation = () => {
                 className={cn(
                   "text-sm font-medium transition-all duration-300 hover:text-primary relative",
                   location.pathname === item.path
-                    ? "text-primary after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-gradient-teal after:rounded-full"
+                    ? "text-primary after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-primary after:rounded-full"
                     : "text-muted-foreground hover:text-foreground"
                 )}
               >

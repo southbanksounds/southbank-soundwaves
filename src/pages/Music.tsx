@@ -139,7 +139,7 @@ const Music = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <Card className="p-8 bg-gradient-hero border-border inline-block">
+          <Card className="p-8 bg-secondary border-border inline-block">
             <h3 className="text-2xl font-bold mb-4 text-foreground">
               Stay Updated
             </h3>

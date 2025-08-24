@@ -72,12 +72,6 @@ export default {
 					'light-teal': 'hsl(var(--southbank-light-teal))' // Light cyan
 				}
 			},
-			backgroundImage: {
-				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-accent': 'var(--gradient-accent)',
-				'gradient-teal': 'var(--gradient-teal)',
-				'gradient-warm': 'var(--gradient-warm)'
-			},
 			boxShadow: {
 				'glow': 'var(--shadow-glow)',
 				'accent': 'var(--shadow-accent)',
