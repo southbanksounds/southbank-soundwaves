@@ -9,8 +9,7 @@ const Shows = () => {
     {
       date: "2025-08-17",
       venue: "Sahara Lounge",
-      city: "Austin, TX",
-      description: "Live performance at Austin's premier music venue"
+      city: "Austin, TX"
     }
   ];
 
@@ -32,9 +31,6 @@ const Shows = () => {
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
             Live Shows
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Experience Southbank live. Join us for intimate performances and atmospheric soundscapes.
-          </p>
         </div>
 
         {/* Upcoming Shows */}
@@ -149,13 +145,10 @@ const Shows = () => {
                 <h3 className="text-xl font-semibold mb-2 text-foreground">
                   {show.venue}
                 </h3>
-                <div className="flex items-center text-muted-foreground mb-2">
+                <div className="flex items-center text-muted-foreground">
                   <MapPin className="mr-2 h-4 w-4" />
                   <span>{show.city}</span>
                 </div>
-                <p className="text-muted-foreground text-sm">
-                  {show.description}
-                </p>
               </Card>
             ))}
           </div>
