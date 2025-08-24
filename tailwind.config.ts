@@ -62,14 +62,14 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Southbank Brand Tokens - From actual visual identity
+				// Modern Brand Tokens - From new color palette
 				southbank: {
-					teal: 'hsl(var(--southbank-teal))',
-					rust: 'hsl(var(--southbank-rust))',
-					coral: 'hsl(var(--southbank-coral))',
-					cream: 'hsl(var(--southbank-cream))',
-					dark: 'hsl(var(--southbank-dark))',
-					'light-teal': 'hsl(var(--southbank-light-teal))'
+					teal: 'hsl(var(--southbank-teal))',      // Light cyan
+					rust: 'hsl(var(--southbank-rust))',      // Coral red  
+					coral: 'hsl(var(--southbank-coral))',    // Coral red
+					cream: 'hsl(var(--southbank-cream))',    // Warm yellow
+					dark: 'hsl(var(--southbank-dark))',      // Dark cyan
+					'light-teal': 'hsl(var(--southbank-light-teal))' // Light cyan
 				}
 			},
 			backgroundImage: {

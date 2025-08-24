@@ -2,117 +2,117 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Southbank Band Website Design System - Authentic brand colors from actual visual identity
+/* Modern Color Palette Design System - Fresh, contemporary colors
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    /* Southbank's Authentic Brand Colors */
-    --background: 180 25% 95%;           /* Light teal/aqua background */
-    --foreground: 25 30% 15%;            /* Deep brown text */
+    /* Base Colors - Light cyan background with dark contrast */
+    --background: 194 100% 79%;          /* Light cyan from palette */
+    --foreground: 191 73% 9%;            /* Dark cyan from palette */
 
-    --card: 180 20% 92%;                 /* Slightly darker teal for cards */
-    --card-foreground: 25 30% 15%;
+    --card: 194 80% 75%;                 /* Slightly darker cyan for cards */
+    --card-foreground: 191 73% 9%;
 
-    --popover: 180 25% 94%;
-    --popover-foreground: 25 30% 15%;
+    --popover: 194 90% 77%;
+    --popover-foreground: 191 73% 9%;
 
-    /* Brand Colors - From actual Southbank visuals */
-    --primary: 15 60% 50%;               /* Rust/brown from logo */
-    --primary-foreground: 180 25% 95%;
+    /* Brand Colors - From new palette */
+    --primary: 357 100% 76%;             /* Coral red from palette */
+    --primary-foreground: 194 100% 79%;
 
-    --secondary: 180 30% 85%;            /* Muted teal */
-    --secondary-foreground: 25 30% 20%;
+    --secondary: 47 96% 70%;             /* Warm yellow from palette */
+    --secondary-foreground: 191 73% 9%;
 
-    --muted: 180 15% 88%;                /* Very light teal */
-    --muted-foreground: 25 20% 45%;
+    --muted: 194 60% 85%;                /* Muted cyan */
+    --muted-foreground: 0 3% 33%;        /* Warm grey from palette */
 
-    --accent: 8 70% 55%;                 /* Coral/red accent */
-    --accent-foreground: 180 25% 95%;
+    --accent: 47 96% 70%;                /* Yellow accent */
+    --accent-foreground: 191 73% 9%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 180 25% 95%;
+    --destructive: 357 100% 76%;
+    --destructive-foreground: 194 100% 79%;
 
-    --border: 180 20% 85%;
-    --input: 180 25% 90%;
-    --ring: 15 60% 50%;
+    --border: 194 50% 70%;
+    --input: 194 70% 75%;
+    --ring: 357 100% 76%;
 
     --radius: 0.5rem;
 
-    /* Southbank Brand Tokens - From actual imagery */
-    --southbank-teal: 180 45% 70%;       /* Signature teal from logo */
-    --southbank-rust: 15 60% 50%;        /* Weathered brown from text */
-    --southbank-coral: 8 70% 55%;        /* Red/coral from grunge design */
-    --southbank-cream: 45 40% 95%;       /* Warm off-white */
-    --southbank-dark: 25 30% 15%;        /* Deep brown */
-    --southbank-light-teal: 180 25% 95%; /* Background teal */
+    /* New Palette Brand Tokens */
+    --southbank-teal: 194 100% 79%;      /* Light cyan */
+    --southbank-rust: 357 100% 76%;      /* Coral red */
+    --southbank-coral: 357 100% 76%;     /* Coral red */
+    --southbank-cream: 47 96% 70%;       /* Warm yellow */
+    --southbank-dark: 191 73% 9%;        /* Dark cyan */
+    --southbank-light-teal: 194 100% 79%; /* Light cyan */
     
-    /* Gradients - Based on actual brand colors */
-    --gradient-hero: linear-gradient(135deg, hsl(180 45% 70%), hsl(15 60% 50%));
-    --gradient-accent: linear-gradient(135deg, hsl(8 70% 55%), hsl(15 60% 50%));
-    --gradient-teal: linear-gradient(135deg, hsl(180 45% 70%), hsl(180 25% 95%));
-    --gradient-warm: linear-gradient(180deg, hsl(45 40% 95%), hsl(180 25% 95%));
+    /* Gradients - Based on new palette */
+    --gradient-hero: linear-gradient(135deg, hsl(194 100% 79%), hsl(357 100% 76%));
+    --gradient-accent: linear-gradient(135deg, hsl(357 100% 76%), hsl(47 96% 70%));
+    --gradient-teal: linear-gradient(135deg, hsl(194 100% 79%), hsl(194 80% 85%));
+    --gradient-warm: linear-gradient(180deg, hsl(47 96% 70%), hsl(194 100% 79%));
     
-    /* Shadows - Softer, more organic feel */
-    --shadow-glow: 0 0 30px hsl(180 45% 70% / 0.3);
-    --shadow-accent: 0 8px 25px hsl(8 70% 55% / 0.2);
-    --shadow-warm: 0 6px 20px hsl(25 30% 15% / 0.1);
-    --shadow-vintage: 0 4px 15px hsl(15 60% 50% / 0.15);
+    /* Shadows - Updated for new palette */
+    --shadow-glow: 0 0 30px hsl(194 100% 79% / 0.3);
+    --shadow-accent: 0 8px 25px hsl(357 100% 76% / 0.2);
+    --shadow-warm: 0 6px 20px hsl(191 73% 9% / 0.1);
+    --shadow-vintage: 0 4px 15px hsl(47 96% 70% / 0.15);
 
-    /* Animations - Friendly, approachable feel */
+    /* Animations - Smooth, modern feel */
     --transition-smooth: all 0.3s ease-out;
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    /* Sidebar - Updated with brand colors */
-    --sidebar-background: 180 20% 92%;
-    --sidebar-foreground: 25 30% 15%;
-    --sidebar-primary: 15 60% 50%;
-    --sidebar-primary-foreground: 180 25% 95%;
-    --sidebar-accent: 180 15% 88%;
-    --sidebar-accent-foreground: 25 30% 15%;
-    --sidebar-border: 180 20% 85%;
-    --sidebar-ring: 15 60% 50%;
+    /* Sidebar - Updated with new colors */
+    --sidebar-background: 194 80% 75%;
+    --sidebar-foreground: 191 73% 9%;
+    --sidebar-primary: 357 100% 76%;
+    --sidebar-primary-foreground: 194 100% 79%;
+    --sidebar-accent: 194 60% 85%;
+    --sidebar-accent-foreground: 191 73% 9%;
+    --sidebar-border: 194 50% 70%;
+    --sidebar-ring: 357 100% 76%;
   }
 
   .dark {
-    /* Dark mode with warm, community feel */
-    --background: 25 30% 8%;
-    --foreground: 180 25% 95%;
+    /* Dark mode with modern palette */
+    --background: 191 73% 9%;            /* Dark cyan from palette */
+    --foreground: 194 100% 79%;          /* Light cyan from palette */
 
-    --card: 25 25% 12%;
-    --card-foreground: 180 25% 95%;
+    --card: 191 60% 12%;                 /* Slightly lighter dark cyan */
+    --card-foreground: 194 100% 79%;
 
-    --popover: 25 25% 10%;
-    --popover-foreground: 180 25% 95%;
+    --popover: 191 65% 10%;
+    --popover-foreground: 194 100% 79%;
 
-    --primary: 180 45% 65%;
-    --primary-foreground: 25 30% 8%;
+    --primary: 357 100% 76%;             /* Coral red */
+    --primary-foreground: 191 73% 9%;
 
-    --secondary: 25 20% 15%;
-    --secondary-foreground: 180 20% 90%;
+    --secondary: 0 3% 33%;               /* Warm grey */
+    --secondary-foreground: 194 90% 85%;
 
-    --muted: 25 15% 20%;
-    --muted-foreground: 180 15% 70%;
+    --muted: 191 40% 15%;                /* Muted dark cyan */
+    --muted-foreground: 194 50% 70%;
 
-    --accent: 8 70% 60%;
-    --accent-foreground: 25 30% 8%;
+    --accent: 47 96% 70%;                /* Yellow accent */
+    --accent-foreground: 191 73% 9%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 180 25% 95%;
+    --destructive: 357 100% 76%;
+    --destructive-foreground: 191 73% 9%;
 
-    --border: 25 20% 18%;
-    --input: 25 20% 15%;
-    --ring: 180 45% 65%;
+    --border: 191 30% 18%;
+    --input: 191 40% 15%;
+    --ring: 357 100% 76%;
 
-    --sidebar-background: 25 25% 10%;
-    --sidebar-foreground: 180 20% 90%;
-    --sidebar-primary: 180 45% 65%;
-    --sidebar-primary-foreground: 25 30% 8%;
-    --sidebar-accent: 25 15% 20%;
-    --sidebar-accent-foreground: 180 20% 90%;
-    --sidebar-border: 25 15% 20%;
-    --sidebar-ring: 180 45% 65%;
+    --sidebar-background: 191 65% 10%;
+    --sidebar-foreground: 194 90% 85%;
+    --sidebar-primary: 357 100% 76%;
+    --sidebar-primary-foreground: 191 73% 9%;
+    --sidebar-accent: 191 40% 15%;
+    --sidebar-accent-foreground: 194 90% 85%;
+    --sidebar-border: 191 30% 18%;
+    --sidebar-ring: 357 100% 76%;
   }
 }
 
