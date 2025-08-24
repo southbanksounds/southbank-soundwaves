@@ -38,7 +38,7 @@ const Info = () => {
                   One listener, upon experiencing Southbank, described it as "Catchy geek punk country rock pop," a label that was, if nothing else, concise.
                 </p>
                 <p>
-                  After hitting a songwriting retreat and realizing he was the only one not in a band, Jeff decided the world deserved to see these songs come to life in rooms full of sweaty people, so a call was put out for suitable musicians. And just like that, Southbank became a "they" instead of a "he." With the additions of Tony Lynch (drums), Sean Heffernan (bass), Amanda Thompson (keys), and Sam Favata (lead guitar), Southbank now truly can be called a band, and it's probably best you arrange to see them live ASAP.
+                  After hitting a songwriting retreat and realizing he was the only one not in a band, Jeff decided the world deserved to see these songs come to life in rooms full of sweaty people, so a call was put out for suitable musicians. And just like that, Southbank became a "they" instead of a "he." With the additions of Tony Lynch (drums), Sean Heffernan (bass), Amanda Thomas (keys), and Sam Favata (lead guitar), Southbank now truly can be called a band, and it's probably best you arrange to see them live ASAP.
                 </p>
               </div>
             </Card>

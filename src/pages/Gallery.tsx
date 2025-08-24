@@ -36,7 +36,7 @@ const Gallery = () => {
     },
     {
       src: "/lovable-uploads/881a9465-63ab-4492-9991-569a8366f075.png",
-      alt: "Amanda Thompson on keys and Sean Heffernan on bass during rehearsal"
+      alt: "Amanda Thomas on keys and Sean Heffernan on bass during rehearsal"
     },
     {
       src: "/lovable-uploads/03169752-8bd2-49b1-9cb3-479e9528f582.png",
