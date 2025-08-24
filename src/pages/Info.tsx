@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ExternalLink, CalendarCheck, Instagram, Facebook, Music, Mail, AtSign } from "lucide-react";
+import { ExternalLink, CalendarCheck, Instagram, Facebook, Music, Mail, AtSign, Users } from "lucide-react";
 
 const Info = () => {
   return (
@@ -49,7 +49,7 @@ const Info = () => {
             <div className="grid md:grid-cols-2 gap-8">
               {/* Email List Signup */}
               <Card className="p-6 bg-secondary border-border text-center">
-                <AtSign className="h-12 w-12 mx-auto mb-4 text-accent" />
+                <Users className="h-12 w-12 mx-auto mb-4 text-accent" />
                 <h3 className="text-xl font-semibold mb-4 text-foreground">
                   Sign up for Email List
                 </h3>
