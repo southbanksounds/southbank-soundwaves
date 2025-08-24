@@ -87,7 +87,7 @@ const Info = () => {
                   size="lg"
                   className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                 >
-                  <a href="mailto:hello@southbankband.com">
+                  <a href="mailto:sounthbanksounds@gmail.com">
                     Contact Us
                     <Mail className="ml-2 h-4 w-4" />
                   </a>
