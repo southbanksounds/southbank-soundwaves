@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import { Facebook, Instagram, Music } from "lucide-react";
 
 const Navigation = () => {
   const location = useLocation();
@@ -12,18 +13,60 @@ const Navigation = () => {
     { name: "Info", path: "/info" },
   ];
 
+  const socialLinks = [
+    {
+      name: "Facebook",
+      icon: Facebook,
+      url: "https://facebook.com/southbankband",
+      color: "hover:text-blue-500"
+    },
+    {
+      name: "Instagram", 
+      icon: Instagram,
+      url: "https://instagram.com/southbankband",
+      color: "hover:text-pink-500"
+    },
+    {
+      name: "Bandcamp",
+      icon: Music,
+      url: "https://southbank.bandcamp.com",
+      color: "hover:text-accent"
+    }
+  ];
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* Band Logo/Name */}
-          <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
-            <img 
-              src="/lovable-uploads/35dd3003-f5d9-4591-b3ae-5ebbd004a030.png" 
-              alt="Southbank" 
-              className="h-10 w-auto"
-            />
-          </Link>
+          {/* Band Logo/Name and Social Links */}
+          <div className="flex items-center space-x-6">
+            <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
+              <img 
+                src="/lovable-uploads/35dd3003-f5d9-4591-b3ae-5ebbd004a030.png" 
+                alt="Southbank" 
+                className="h-10 w-auto"
+              />
+            </Link>
+            
+            {/* Social Links */}
+            <div className="flex items-center space-x-4">
+              {socialLinks.map((link) => {
+                const IconComponent = link.icon;
+                return (
+                  <a
+                    key={link.name}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`text-muted-foreground transition-all duration-300 hover:scale-110 ${link.color}`}
+                    aria-label={`Follow us on ${link.name}`}
+                  >
+                    <IconComponent size={18} />
+                  </a>
+                );
+              })}
+            </div>
+          </div>
 
           {/* Navigation Menu */}
           <div className="hidden md:flex items-center space-x-8">
