@@ -59,18 +59,18 @@ const Gallery = () => {
   const videos = [
     {
       src: "https://www.youtube.com/embed/ggCygyJNlFE",
-      title: "Southbank - Official Music Video",
-      description: "Watch our latest official music video featuring the full band."
+      title: "Southbank Sampler",
+      description: "Four songs in two minutes"
     },
     {
       src: "https://www.youtube.com/embed/I6JiLn0dd9Q",
-      title: "Southbank - Live Performance",
-      description: "Live performance capturing our power pop sound."
+      title: "'Decide' live at the Sahara Lounge",
+      description: "August 17, 2025"
     },
     {
       src: "https://www.youtube.com/embed/LkIMf9IhPvo",
-      title: "Southbank - Music Video",
-      description: "Another look at our music and visual style."
+      title: "'Can't Say Why' lyrics video",
+      description: ""
     },
     {
       src: "https://www.youtube.com/embed/i0zGBnn5ZD0",
