@@ -23,13 +23,13 @@ const Music = () => {
       artwork: "/lovable-uploads/515e3eec-17ab-413a-8b55-fcf316012974.png"
     },
     {
-      title: "Urban Landscapes",
+      title: "Can't Say Why",
       year: "2023",
-      type: "Album",
-      spotifyUrl: "https://open.spotify.com/album/example",
-      appleMusicUrl: "https://music.apple.com/us/album/example",
-      bandcampUrl: "https://southbanksounds.bandcamp.com/album/example",
-      artwork: "https://picsum.photos/400/400?random=3"
+      type: "Single",
+      spotifyUrl: "https://open.spotify.com/track/60m2Q5XwF9Mo1LdXZ7G8im?si=bb9608a28b8a4ded",
+      appleMusicUrl: "https://music.apple.com/us/song/cant-say-why/1686842746",
+      bandcampUrl: "https://southbanksounds.bandcamp.com/track/cant-say-why",
+      artwork: "/lovable-uploads/aa023faa-ed5b-4733-9133-fc6276d3242a.png"
     }
   ];
 
