@@ -15,10 +15,8 @@ const Shows = () => {
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-GB', { 
-      weekday: 'long',
-      year: 'numeric', 
-      month: 'long', 
+    return date.toLocaleDateString('en-US', { 
+      month: 'short', 
       day: 'numeric' 
     });
   };
