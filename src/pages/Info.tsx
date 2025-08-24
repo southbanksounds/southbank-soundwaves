@@ -76,9 +76,6 @@ const Info = () => {
                 <h3 className="text-xl font-semibold mb-4 text-foreground">
                   Business Inquiries
                 </h3>
-                <p className="text-muted-foreground mb-6">
-                  For bookings, collaborations, press inquiries, or general questions, we'd love to hear from you.
-                </p>
                 <Button 
                   asChild 
                   variant="outline"
@@ -153,10 +150,6 @@ const Info = () => {
               <h3 className="text-2xl font-bold mb-4 text-foreground">
                 Press & Media
               </h3>
-              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Media professionals can access our press kit including high-resolution photos, 
-                biographies, and promotional materials.
-              </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   asChild
