@@ -29,7 +29,7 @@ const Navigation = () => {
     {
       name: "YouTube",
       icon: Youtube,
-      url: "https://youtube.com/@southbankband",
+      url: "https://www.youtube.com/channel/UCnE7hc21MNc4KdZmfnswnFQ",
       color: "hover:text-red-500"
     },
     {
