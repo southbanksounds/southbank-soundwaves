@@ -23,7 +23,7 @@ const Navigation = () => {
     {
       name: "Instagram", 
       icon: Instagram,
-      url: "https://instagram.com/southbankband",
+      url: "https://www.instagram.com/southbanksounds/",
       color: "hover:text-pink-500"
     },
     {
