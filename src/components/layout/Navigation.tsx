@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Facebook, Instagram, Music } from "lucide-react";
+import { Facebook, Instagram, Music, Youtube } from "lucide-react";
 
 const Navigation = () => {
   const location = useLocation();
@@ -25,6 +25,12 @@ const Navigation = () => {
       icon: Instagram,
       url: "https://instagram.com/southbankband",
       color: "hover:text-pink-500"
+    },
+    {
+      name: "YouTube",
+      icon: Youtube,
+      url: "https://youtube.com/@southbankband",
+      color: "hover:text-red-500"
     },
     {
       name: "Bandcamp",
