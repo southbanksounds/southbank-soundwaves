@@ -35,7 +35,7 @@ const Navigation = () => {
     {
       name: "Bandcamp",
       icon: Music,
-      url: "https://southbank.bandcamp.com",
+      url: "https://southbanksounds.bandcamp.com",
       color: "hover:text-accent"
     }
   ];
